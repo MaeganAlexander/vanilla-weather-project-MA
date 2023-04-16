@@ -1,6 +1,19 @@
 body {
   font-family: "Courier New", Courier, monospace;
 }
+
+.weatherCard {
+  max-width: 600px;
+  margin: 30px 0auto;
+  padding: 20px;
+  border: 1px solid #deff5d;
+  border-radius: 5px;
+}
+.btn.btn-primary {
+  color: yellow;
+  border-radius: 4px;
+  border: 1px solid black;
+}
 h1 {
   color: pink;
   display: block;
@@ -8,15 +21,22 @@ h1 {
   font-weight: 100;
   line-height: 28.8px;
   text-align: left;
+  margin-bottom: 0;
 }
-.btn.btn-primary {
-  color: yellow;
-  border-radius: 4px;
+
+ul {
+  margin: 0;
+  padding: 0;
 }
-.weatherCard {
-  max-width: 600px;
-  margin: 30px 0auto;
-  padding: 20px;
-  border: 1px solid #deff5d;
-  border-radius: 5px;
+
+li {
+  list-style: none;
+  color: black;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19.2px;
+  text-align: left;
 }
