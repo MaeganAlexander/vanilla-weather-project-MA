@@ -1,3 +1,22 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
 h1 {
   color: pink;
+  display: block;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 28.8px;
+  text-align: left;
+}
+.btn.btn-primary {
+  color: yellow;
+  border-radius: 4px;
+}
+.weatherCard {
+  max-width: 600px;
+  margin: 30px 0auto;
+  padding: 20px;
+  border: 1px solid #deff5d;
+  border-radius: 5px;
 }
