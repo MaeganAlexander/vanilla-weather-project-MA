@@ -40,6 +40,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formateDate(response.data.dt * 1000);
 }
 let apiKey = "5fd472b7acba333cd8a035ea85a0d4d4c";
+let city = "London"; // may be removed at a laer date.
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
 g=London&appid=$(appKey)&units=metric`;
 
