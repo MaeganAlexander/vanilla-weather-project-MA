@@ -53,7 +53,7 @@ function search(city) {
 g=London&appid=$(appKey)&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
-function searc(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-Input");
   search(cityInputElement.value);
