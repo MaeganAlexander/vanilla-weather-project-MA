@@ -47,10 +47,21 @@ function displayTemperature(response) {
 
   getForecast(response.data.coord);
 }
-let apiKey = "5fd472b7acba333cd8a035ea85a0d4d4c";
-let city = "London"; // may be removed at a laer date.
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
+function search(city) {
+  let apiKey = "5fd472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?
 g=London&appid=$(appKey)&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function searc(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-Input");
+  search(cityInputElement.value);
+  console.log(cityInputElement.value); //may remove later date
+}
 
 console.log(apiUrl); // can remove later
-axios.get(url).then(displayTemperature);
+axios.get(apiurl).then(displayTemperature);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handlesSubmit);
