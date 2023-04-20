@@ -21,9 +21,18 @@
     <div class="conatiner">
       <dv class="weather-wrapper">
     <div class="weatherCard"> 
+      <form id="search-form" class="mb-3"> 
+        <div class="row">
+          <div class="col-10">
+        <input type="search" placeholder="type in cit.." class="form-control"/>
+        </div>
+        <div class="col-2">
+        <input type="submit" value="search" class="btn.btn-primary w-100"/>
+        </div>
+        </div>
+      </form>
       <div class="overview">
        <h1 id="city"> </h1> 
-       <a href="" class="btn.btn-primary"> click me</a> // may take away
        <ul>
         <li>Last Updated:</li><span id="date"></span>
         <li id="descriptions"></li>
