@@ -18,30 +18,31 @@
     <title>vanilla weather app</title>
   </head>
   <body>
-    <div class="conatiner"> // need to fix the main body container after solid sturcture in place. 
-      <dv class="weather-wrapper">
+  <div class="container"> 
+  <div class="weather-wrapper">
     <div class="weatherCard"> 
       <form id="search-form" class="mb-3"> 
         <div class="row">
           <div class="col-10">
-        <input type="search" 
-        placeholder="type in cit.."
-         class="form-control"
-         id="city-input"
-         autocomplete="off"/>
-        </div>
-        <div class="col-2">
-        <input type="submit" value="search" class="btn.btn-primary w-100"/>
-        </div>
+            <input type="search" placeholder="type in city.." class="form-control" id="city-input" autocomplete="off"/>
+          </div>
+          <div class="col-2">
+            <input type="submit" value="search" class="btn btn-primary w-100"/>
+          </div>
         </div>
       </form>
       <div class="overview">
-       <h1 id="city"> </h1> 
-       <ul>
-        <li>Last Updated:</li><span id="date"></span>
-        <li id="descriptions"></li>
+        <h1 id="city"></h1> 
+        <ul>
+          <li>Last Updated: <span id="date"></span></li>
+          <li id="descriptions"></li>
         </ul>
       </div>
+    </div>
+  </div>
+</div>
+
+      </div> // here up to 
           <div class="container">
    
          <div class="row">
