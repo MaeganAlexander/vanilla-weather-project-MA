@@ -1,4 +1,3 @@
-// change here
 function formateDate(timestamp) {
   let date = newDate(timestamp);
   let hours = date.getHours();
@@ -26,7 +25,6 @@ function formateDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data); // may be reomved later date.
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -57,7 +55,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-  console.log(cityInputElement.value); //may remove later date
+  console.log(cityInputElement.value);
 }
 
 let form = document.querySelector("#search-form");
